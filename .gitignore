@@ -1,0 +1,6 @@
+.sonarlint
+.env
+*.pyo
+*.pyc
+__pycache__/
+*.py[cod]

@@ -1,0 +1,155 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #757575;
+}
+
+a:link {
+	color: #4e8bff;
+	text-decoration: none; 
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+a:visited {
+	color: #4e8bff;
+ 	text-decoration: none; 
+	font-family: Helvetica,Arial,sans-serif;
+} 
+a:hover {
+	color: #e8411f;
+	font-family: Helvetica,Arial,sans-serif;
+}  
+
+h1 {
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+h1 a:link, h1 a:visited {
+	font-size: 18px;
+	color: #e8411f;
+}
+
+.addentrytoguestbook {
+	  color: #4e8bff;
+	  font-weight: bold;
+}
+
+h1 a:hover {
+	color: #4e8bff;
+}
+
+h2 {
+	font-size: 16px;
+	text-align: center;
+	line-height: 1.6em;	
+	margin: 20px 0 10px 0; 
+}
+
+h2 p {
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.6em;	
+	margin: 20px 0 10px 0; 
+	color: #4e8bff;
+	font-weight: normal;
+}
+
+h2 p span {
+	color: #757575;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#wrapper {
+	width: 1004px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main {
+	margin: 0 auto;
+	width: 700px;
+	padding: 10px 0 40px 0;
+}
+
+#content {
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.post {
+	text-align: center;
+	margin: 0 auto 10px auto;
+	max-width: 500px;
+}
+
+.article {
+	margin: 0 160px 20px;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.hrblue {
+	border-color: #e8411f;
+	background-color: #e8411f;
+	width: 100%;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+#hrblue {
+	color: #e8411f;
+	font-weight: bold;
+} 
+
+.showdetails {
+	margin: 20px 0;
+}
+
+.portfolioimg img {
+	max-width: 640px;
+	margin: 10px auto;
+}
+
+.linktoexternal a:link, .linktoexternal a:visited, .linktoexternal a:hover {
+	font-weight: bold;
+}
+
+.linktoexternal p span {
+	font-weight: bold;
+	color: #4e8bff;
+}
+
+.linktoexternal p span:nth-child(2) {
+	font-weight: normal;
+	color: #4e8bff;
+}
+
+.linktoexternal p span:nth-child(3) {
+	font-weight: normal;
+	color: #757575;
+	font-style: italic;
+}
+
+.description {
+	font-weight: normal;
+	padding: 10px 0;
+	max-width: 640px;
+	margin: 0px auto;
+}
+
+input#nick {
+  width: 200px;
+  float: left;
+}
+
+.pagination {
+	margin: 10px 0 20px 0;
+}
+
+
+	

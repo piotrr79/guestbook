@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+ 
+{% block title %} Guest Book {% endblock %}
+
+{% block content %}
+    <div class="showdetails">
+		<div class="linktoexternal">
+		<p>
+            <span>{{guestbook.id}}</span> &nbsp; <span>{{guestbook.nick}}</span> &nbsp; <span>{{guestbook.created|date:"d D F Y f"}}</span>
+            </p>
+		</div>
+		<div class="description">
+			{{guestbook.content|safe}}
+		</div>
+    </div>
+{% endblock %}

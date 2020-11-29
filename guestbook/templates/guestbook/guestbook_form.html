@@ -1,0 +1,18 @@
+<table>
+<form action="{% url 'addentry' %}" method="post">
+    {% csrf_token %}
+<tr>
+<td><label for="nick">Nick: </label></td>
+<td><input id="nick" type="text" name="nick" maxlength="255"></td>
+</tr>
+<tr>
+<td><label for="content">Message: </label></td>
+<td><textarea id="content" rows="12" cols="50" name="content"></textarea></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="Submit" /></td>
+</tr>
+</form>
+</table> 
+

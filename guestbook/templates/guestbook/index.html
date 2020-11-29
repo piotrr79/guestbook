@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+ 
+{% block title %} Guest Book {% endblock %}
+
+{% block content %}
+    <h1>Entries List</h1>     
+    {% for guestbook in guestbook_index %}
+    <div class="post">
+        <h2>
+			<p>
+            <a href="/{{ guestbook.id }}/">
+                &rArr; {{guestbook.id}} 
+            </a>
+            &nbsp; {{guestbook.nick}} &nbsp; <span>{{guestbook.created|date:"d D F Y f"}}</span>
+            </p>
+        </h2>
+        <p>{{guestbook.content|truncatewords:20}}</p>
+    </div>
+    {% endfor %}
+    <div class="post">
+	   <p class="addentrytoguestbook">Add entry to guest book:</p>	
+       <p>
+       {% load guestbook_extras %}
+       {% addentryform %}
+       </p>
+    </div>
+
+
+
+<div class="pagination">
+    <span class="step-links">
+        {% if guestbook_index.has_previous %}
+            <a href="?page={{ guestbook_index.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ guestbook_index.number }} of {{ guestbook_index.paginator.num_pages }}.
+        </span>
+
+        {% if guestbook_index.has_next %}
+            <a href="?page={{ guestbook_index.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock %}
